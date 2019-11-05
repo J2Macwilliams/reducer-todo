@@ -7,7 +7,7 @@ const TodoList = () => {
     const [state, dispatch] = useReducer(reducer, initialState)
     return (
         <div>
-            
+            <h1>Get it Done!</h1>
         </div>
     )
 }
