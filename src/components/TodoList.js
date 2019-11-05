@@ -8,6 +8,14 @@ const TodoList = () => {
     return (
         <div>
             <h1>Get it Done!</h1>
+            <form>
+                <input 
+                name = "todo"
+                id = "todo"
+                placeholder = "add todo"
+                />
+                <button>submit</button>
+            </form>
         </div>
     )
 }
