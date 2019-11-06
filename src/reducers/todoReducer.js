@@ -15,7 +15,7 @@ export function reducer(state, action) {
                 action.payload,
             ]
                 ;
-        case "BYEBYE":
+        case "COMPLETE_TODO":
             return (
                 state.map(todo => {
                     if (todo.id === action.payload) {
@@ -27,7 +27,7 @@ export function reducer(state, action) {
 
                 )
             )
-        case "GONE":
+        case "REMOVE_TODO":
             return (
                 state.filter(
                     todo => {

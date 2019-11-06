@@ -16,20 +16,22 @@ const TodoForm = () => {
     const handleSubmit = event => {
         event.preventDefault();
 
-        dispatch({ type: "MAKE_TODO", payload: { 
-            item: newTodo, 
-            completed: false, 
-            id: Date.now() 
-        } })
+        dispatch({
+            type: "MAKE_TODO", payload: {
+                item: newTodo,
+                completed: false,
+                id: Date.now()
+            }
+        })
         setNewToDo("");
     }
 
     const toggleToDo = (id) => {
-        dispatch({ type: "BYEBYE", payload: id })
+        dispatch({ type: "COMPLETE_TODO", payload: id })
     }
 
     const goAway = () => {
-        dispatch({ type: "GONE" })
+        dispatch({ type: "REMOVE_TODO" })
     }
 
     return (
@@ -47,7 +49,7 @@ const TodoForm = () => {
                 <button onClick={goAway}>clear completed</button>
 
             </form>
-            <TodoList  task={state} toggleCompleted={toggleToDo} />
+            <TodoList task={state} toggleCompleted={toggleToDo} />
         </div>
     )
 }
