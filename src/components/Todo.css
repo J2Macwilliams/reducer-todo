@@ -1,14 +1,32 @@
-.item.completed {
-    text-decoration: line-through;
-  }
+
 
   h1 {
-      color: firebrick;
-  }
-
-  .output {
-      background:firebrick;
       color: white;
-      width: 30%;
-      border-radius: 10px;
+      box-shadow: 0 0 10px 2px firebrick;
+     
+  }
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+input {
+    margin: 5%;
+    font-size: 1.5rem;
+}
+button {
+    margin: 5%;
+    font-size: 1.5rem;
+    color: firebrick;
+}
+  .output {
+    text-align: center;
+    background:firebrick;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    
+  }
+  .item.completed {
+    text-decoration: line-through;
   }
