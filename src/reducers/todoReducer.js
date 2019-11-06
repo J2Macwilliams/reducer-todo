@@ -12,24 +12,31 @@ export function reducer(state, action) {
         case "MAKE_TODO":
             return [
                 ...state,
-                 action.payload,
-                ]
-            ;
-        case "ByeBye" :
+                action.payload,
+            ]
+                ;
+        case "BYEBYE":
             return (
                 state.map(todo => {
                     if (todo.id === action.payload) {
                         return { ...todo, completed: !todo.completed }
-                      } else {
+                    } else {
                         return todo;
-                      }
+                    }
                 }
 
                 )
             )
-          
-           
-           
+        case "GONE":
+            return (
+                state.filter(
+                    todo => {
+                        return !todo.completed
+                    }
+                )
+            )
+
+
 
 
         default:
