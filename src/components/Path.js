@@ -1,14 +1,15 @@
 import React from 'react'
 
+import './Todo.css'
 
 const Path = () => {
     return (
         <div>
             <a href="https://github.com/J2Macwilliams/reducer-todo/pull/1">
-                <button>Code</button>
+                <button className="career" >Code</button>
             </a>
             <a href="https://j2macwilliams.github.io/My-Portfolio/">
-                <button>Portfolio</button>
+                <button className="career" >Portfolio</button>
             </a>
 
         </div>

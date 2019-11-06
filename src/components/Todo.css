@@ -1,5 +1,15 @@
 
+.career {
+    background: firebrick;
+    color: white;
+    border-radius: 9px;
+}
 
+.career:hover {
+    background: white;
+    color: firebrick;
+    box-shadow: 0 0 30px 10px firebrick;
+}
   h1 {
       color: white;
       box-shadow: 0 0 10px 2px firebrick;
