@@ -1,0 +1,42 @@
+
+.career {
+    background: firebrick;
+    color: white;
+    border-radius: 9px;
+}
+
+.career:hover {
+    background: white;
+    color: firebrick;
+    box-shadow: 0 0 30px 10px firebrick;
+}
+  h1 {
+      color: white;
+      box-shadow: 0 0 10px 2px firebrick;
+     
+  }
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+input {
+    margin: 5%;
+    font-size: 1.5rem;
+}
+button {
+    margin: 5%;
+    font-size: 1.5rem;
+    color: firebrick;
+}
+  .output {
+    text-align: center;
+    background:firebrick;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    
+  }
+  .item.completed {
+    text-decoration: line-through;
+  }
